@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/output.css" rel="stylesheet">
+    <title>grid</title>
+</head>
+<body class="h-[1300px] min-w-full">
+    <div class="h-full w-full grid grid-rows-12 grid-cols-5 bg-emerald-300">
+        <div id="navbar" class="h-2/12 w-full row-start-1 col-start-1 col-span-full z-[10]">
+            <div id="navbar-layout" class="lg:h-[90px] mobile:h-[60px] w-full flex items-center flex-wrap justify-start fixed bg-emerald-300 z-2">
+                <div class="h-full lg:w-2/12 md:w-1/12 sm:1/12 mobile:w-2/12 flex justify-center items-center bg-emerald-300">
+                    <div id="hambuger-layout" class="mobile:opacity-100 lg:opacity-0 w-[50px] h-[40px] bg-emerald-300 cursor-pointer z-2">
+                        <ul id="hambuger-items" class="w-[35px] h-[40px] flex flex-col justify-center items-center gap-[4px]">
+                            <li class="style-hambuger-list"></li>
+                            <li class="style-hambuger-list"></li>
+                            <li class="style-hambuger-list"></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="font-bold text-md lg:opacity-100 mobile:opacity-0 z-1">Web profil</div> -->
+                </div>
+                <div id="navbar-items" class="lg:h-full mobile:h-[300px] lg:w-8/12 mobile:w-0 mobile:-translate-x-[100px] mobile:transition-width mobile:duration-20 lg:duration-0 lg:translate-x-0 bg-emerald-300 lg:flex lg:items-center lg:justify-end lg:relative mobile:absolute lg:translate-y-[0] mobile:translate-y-[180px] lg:px-5">
+                    <ul class="style-navbar-items">
+                        <li class="style-navbar-list">Home</li>
+                        <li class="style-navbar-list">Tentang</li>
+                        <li class="style-navbar-list">Kontak</li>
+                        <li class="style-navbar-list">Lainnya</li>
+                    </ul>
+                </div>
+                <div id="navbar-account" class="lg:w-2/12 md:w-11/12 sm:w-10/12 mobile:w-10/12 h-full bg-emerald-300 flex mobile:justify-end lg:justify-center mobile:justify-end items-center pr-2">
+                    <div class="mobile:h-[80px] lg:h-full w-full mobile:flex mobile:justify-end lg:py-4 mobile:py-3 z-3">
+                        <img src="./gambar/hutan.jpg" class="lg:w-[60px] mobile:w-[55px] h-full object-cover rounded-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gambar-template" class="w-full h-full row-start-2 row-span-2 col-start-1 col-span-full bg-slate-200">
+            <ul id="gambar-list" class="h-full w-full bg-emerald grid grid-rows-1 grid-cols-3">
+                <li class="h-full w-full relative transition-transform duration-1000 row-start-1 col-start-1 col-span-3">
+                    <div class="saturate-200 brightness-100 contrast-100 h-full w-full bg-emerald-400 flex items-center justify-center text-white text-4xl font-bold">
+                        <img src="./gambar/mt-fuji.jpg" class="w-full h-full object-cover bg-cover">
+                    </div>
+                </li>
+                <li class="h-full w-full relative -translate-x-full transition-transform duration-1000 row-start-1 col-start-1 col-span-3">
+                    <div class="h-full w-full bg-emerald-400 relative flex items-center justify-center text-white text-4xl font-bold">
+                        <img src="./gambar/hutan.jpg" class="w-full h-full object-cover bg-cover">
+                    </div>
+                </li>
+                <!-- <li class="h-full w-full">
+                    <div class="h-full w-full bg-emerald-400 flex items-center justify-center text-white text-4xl font-bold">
+                        <img src="./gambar/hutan.jpg" class="w-full h-full object-cover bg-cover">
+                    </div>
+                </li>
+                <li class="h-full w-full">
+                    <div class="h-full w-full bg-emerald-400 flex items-center justify-center text-white text-4xl font-bold">
+                        <img src="./gambar/hutan.jpg" class="w-full h-full object-cover bg-cover">
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div id="list" class="h-full w-full row-start-4 md2:row-span-2 noscreen:row-span-1 col-start-1 col-span-full p-2">
+            <div id="main-content-footer" class="h-full w-full bg-slate-200 rounded-xl">
+                <div id="items-list" class="style-items-list">
+                    <div id="list-1" class="h-10/12 w-1/5 bg-slate-300 px-2 py-2 flex flex-col justify-center items-center group">
+                        <div id="gambar" class="style-gambar">
+                            <div id="items-gambar" class="h-full w-full">
+                                <img src="./gambar/logoGambar.jpg" class="h-full w-full object-contain">
+                            </div>
+                        </div>
+                        <div id="caption" class="style-caption">List 1</div>
+                    </div>
+                    <div id="list-2" class="h-10/12 w-1/5 bg-slate-300 px-2 py-2 flex flex-col justify-center items-center group">
+                        <div id="gambar" class="style-gambar">
+                            <div id="items-gambar" class="h-full w-full">
+                                <img src="./gambar/logoGambar.jpg" class="h-full w-full object-contain">
+                            </div>
+                        </div>
+                        <div id="caption" class="style-caption">List 2</div>
+                    </div>
+                    <div id="list-3" class="h-10/12 w-1/5 bg-slate-300 px-2 py-2 flex flex-col justify-center items-center group">
+                        <div id="gambar" class="lg:h-5/6 lg:w-3/4 noscreen:h-0 noscreen:w-0 md2:h-5/6 md2:w-full bg-slate-300  transition-transform duration-1000 group-hover:-translate-y-2 group-hover:-translate-x-2 group-hover:shadow-xl shadow-slate-950">
+                            <div id="items-gambar" class="h-full w-full">
+                                <img src="./gambar/logoGambar.jpg" class="h-full w-full object-contain">
+
+                            </div>
+                        </div>
+                        <div id="caption" class="style-caption">List 3</div>
+                    </div>
+                    <div id="list-4" class="h-10/12 w-1/5 bg-slate-300 px-2 py-2 flex flex-col justify-center items-center group">
+                        <div id="gambar" class="style-gambar">
+                            <div id="items-gambar" class="h-full w-full">
+                                <img src="./gambar/logoGambar.jpg" class="h-full w-full object-contain">
+
+                            </div>
+                        </div>
+                        <div id="caption" class="style-caption">List 4</div>
+                    </div>
+                    <div id="list-5" class="h-10/12 w-1/5 bg-slate-300 px-2 py-2 group flex flex-col justify-center items-center">
+                        <div id="gambar" class="style-gambar">
+                            <div id="items-gambar" class="h-full w-full">
+                                <img src="./gambar/logoGambar.jpg" class="mobile:h-full mobile:w-full noscreen:w-0 noscreen:h-0 object-contain">
+                            </div>
+                        </div>
+                        <div id="caption" class="style-caption">List 5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main" class="h-full w-full md2:row-start-6 xsm:row-start-5 mobile:row-span-7 xsm:row-span-7 md2:row-span-6 col-start-1 col-span-full flex lg:flex-row mobile:flex-col">
+            <div id="body" class="lg:w-3/4 lg:h-full mobile:w-full mobile:h-2/3 p-2">
+                <div id="main-content-body" class="w-full h-full bg-slate-200 rounded-xl p-2">
+                    <!-- loading screen -->
+                    <ul class="h-full w-full flex flex-col gap-2">
+                        <li class="style-body-list"></li>
+                        <li class="style-body-list"></li>
+                        <li class="style-body-list"></li>
+                    </ul>
+                </div>
+            </div>
+            <aside id="aside" class="lg:w-1/4 lg:h-[650px] mobile:w-full mobile:h-1/3 p-2">
+                <div id="main-aside" class="h-full w-full bg-slate-200 rounded-xl p-2 overflow-y-scroll">
+                    <div id="title-content-aside" class="h-1/4 w-full bg-slate-200 flex items-center p-7 gap-5">
+                        <div class="h-[13px] w-[15px] bg-orange-400 rounded-full mt-4"></div>
+                        <div class="h-[15px] w-full text-xl font-bold">Todo List</div>
+                    </div>
+                    <div id="main-content-aside" class="h-3/4 w-full bg-slate-200">
+                        <ul class="w-full h-full bg-slate-200 flex flex-col justify-start px-7">
+                            <li>
+                                <div class="h-1/6 w-full bg-slate-200 flex items-center p-5 gap-5">
+                                    <div class="h-[13px] w-[15px] bg-cyan-400 rounded-full mt-4"></div>
+                                    <div class="h-[13px] w-full border-2">List Activity 1</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="h-1/6 w-full bg-slate-200 flex items-center p-5 gap-5">
+                                    <div class="h-[13px] w-[15px] bg-emerald-400 rounded-full mt-4"></div>
+                                    <div class="h-[15px] w-full border-2">List Activity 2</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="h-1/6 w-full bg-slate-200 flex items-center p-5 gap-5">
+                                    <div class="h-[13px] w-[15px] bg-red-400 rounded-full mt-4"></div>
+                                    <div class="h-[15px] w-full border-2">List Activity 3</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </aside>
+        </div>
+        <div id="footer" class="h-full w-full md2:row-start-12 mobile:row-start-12 xsm:row-start-12 col-start-1 col-span-full p-2">
+            <div id="main-content-footer" class="h-full w-full bg-slate-200 rounded-xl p-2">
+                <div class="w-full h-full bg-slate-400 animate-pulse"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let hambuger = document.getElementById("hambuger-layout");
+        let navbar = document.getElementById("navbar-items");
+        let hambugerItems = document.getElementById("hambuger-items");
+        let items = hambugerItems.querySelectorAll("ul > li");
+        let gambarTemplate = document.getElementById("gambar-template");
+        let gambarList = document.getElementById("gambar-list");
+        let gambarItems = gambarList.querySelectorAll("li");
+        let i = 0, j = 0;
+
+        setInterval(() => {
+            if(j % 2 == 0){
+                gambarItems[1].classList.remove("opacity-0");
+                gambarItems[1].classList.add("opacity-100");
+                gambarItems[1].classList.remove("-translate-x-full");
+                gambarItems[0].classList.add("translate-x-full");
+                gambarItems[1].classList.add("col-span-3");
+                
+                setTimeout(() => {
+                    gambarItems[0].classList.remove("translate-x-full");
+                    gambarItems[0].classList.add("-translate-x-full");
+                }, 2000);  
+                console.log(j);
+
+            }
+            else if(j % 2 > 0){
+                gambarItems[0].classList.remove("-translate-x-full");
+                gambarItems[1].classList.add("translate-x-full");
+                gambarItems[1].classList.remove("opacity-100");
+
+                setTimeout(() => {
+                    gambarItems[1].classList.remove("translate-x-full");
+                    gambarItems[1].classList.add("opacity-0");
+                    gambarItems[1].classList.add("-translate-x-full");
+
+
+                }, 2000);         
+            }
+            
+            if(j == 10) { j -= j; }
+            j++;
+            
+        }, 3000);
+
+
+
+       
+
+        
+
+        
+
+        hambuger.addEventListener("click", () => {
+            if(i % 2 == 0){
+                items[0].classList.add("origin-top-left");
+                items[0].classList.add("rotate-45");
+                items[0].classList.add("-translate-y-[2px]");
+                items[0].classList.add("translate-x-[8px]");
+                items[2].classList.add("origin-bottom-left");
+                items[2].classList.add("-rotate-45");
+                items[2].classList.add("translate-y-[1px]");
+                items[2].classList.add("translate-x-[8px]");
+                items[1].classList.add("opacity-0");
+                navbar.classList.remove("mobile:w-0");
+                navbar.classList.remove("mobile:-translate-x-[100px]");
+                navbar.classList.add("mobile:w-full");
+                navbar.classList.add("mobile:translate-x-0");
+                gambarTemplate.classList.remove("z-0");
+                //hambugerItems.classList.add()
+            }
+            else if(i % 2 > 0){
+                items[0].classList.remove("origin-top-left");
+                items[0].classList.remove("rotate-45");
+                items[0].classList.remove("-translate-y-[2px]");
+                items[0].classList.remove("translate-x-[8px]");
+                items[2].classList.remove("origin-bottom-left");
+                items[2].classList.remove("-rotate-45");
+                // items[2].classList.remove("translate-y-[6px]");
+                items[2].classList.remove("translate-x-[8px]");
+                items[1].classList.remove("opacity-0");
+                navbar.classList.add("mobile:w-0");
+                navbar.classList.add("mobile:-translate-x-[100px]");
+                navbar.classList.remove("mobile:w-full");
+                navbar.classList.remove("mobile:translate-x-0");
+                gambarTemplate.classList.add("z-0");
+
+            }
+            else if(i == 10){
+                i -= i;
+            }
+            i++;
+        })
+    </script>
+</body>
+</html>
